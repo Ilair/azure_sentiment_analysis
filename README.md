@@ -1,93 +1,101 @@
-# Lab Project 03 - Análise de sentimentos com Language Studio no Azure AI
-**Sentiment and opinion mining** é uma solução da plataforma **Language Studio, da Azure**, que permite **detectar sentimentos positivos, negativos e neutros** a partir de sentenças. Esse repositório mostra alguns exemplos de testes na plataforma. Os procedimentos foram realizados como parte do **Bootcamp Microsoft Azure AI Fundamentals, da DIO**.
+# Lab Project 03 - Análise de Sentimentos com Language Studio no Azure AI  
 
-![Static Badge](https://img.shields.io/badge/Status_Projeto:-Concluído_(15/Mar/2024)-green)
+![Status](https://img.shields.io/badge/Status_Projeto:-Concluído_(10/Mar/2025)-green)  
 
-![Static Badge](https://img.shields.io/badge/Inteligência_Artificial_(IA)-blue)
-![Static Badge](https://img.shields.io/badge/NLP-blue)
-![Static Badge](https://img.shields.io/badge/Speech_Recognition-blue)
-![Static Badge](https://img.shields.io/badge/Sentiment_Mining-blue)
-![Static Badge](https://img.shields.io/badge/Opinion_Mining-blue)
-![Static Badge](https://img.shields.io/badge/Microsoft_Azure-blue)
-![Static Badge](https://img.shields.io/badge/Azure_Language_Studio-blue)
+![Inteligência Artificial](https://img.shields.io/badge/Inteligência_Artificial_(IA)-blue)  
+![NLP](https://img.shields.io/badge/NLP-blue)  
+![Speech Recognition](https://img.shields.io/badge/Speech_Recognition-blue)  
+![Sentiment Mining](https://img.shields.io/badge/Sentiment_Mining-blue)  
+![Opinion Mining](https://img.shields.io/badge/Opinion_Mining-blue)  
+![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-blue)  
+![Azure Language Studio](https://img.shields.io/badge/Azure_Language_Studio-blue)  
 
-## Índice
-1. [Procedimento](#procedimento)
-2. [Resultados](#resultados)
-3. [Conclusão e Insights](#conclusão-e-insights)
+---
 
-## Procedimento
-Esses experimentos foram baseados nos guias da Microsoft Learn. Para informações mais detalhadas, consulte a página [Analyze text with Language Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/06-text-analysis.html).
+## Introdução  
 
-### Criar um recurso Azure Language Service
-Para ser possível usar o Language Studio, é essencial que você possua um recurso para a plataforma associado a sua conta Azure. Isso pode ser feito por meio dos seguintes passos:
-1. Acessar https://portal.azure.com
-2. Criar um novo recurso **Language Service** através da opção Create Resource.
+O **Sentiment and Opinion Mining** é uma solução do **Azure Language Studio** que permite identificar **sentimentos positivos, negativos e neutros** em textos. Este repositório apresenta testes realizados na plataforma como parte do **Bootcamp Microsoft Azure AI Fundamentals, da DIO**.  
 
-<div align="center">
-    <img src="readmeFiles/01.png" alt="Create a resource" width="600"/>
-</div>
+A análise de sentimentos e opiniões é amplamente utilizada para automatizar a compreensão de feedbacks de clientes, avaliações de produtos e interações em redes sociais. Essa tecnologia permite extrair informações relevantes e gerar insights valiosos para empresas.  
 
-<div align="center">
-    <img src="readmeFiles/03.png" alt="Create a resource" width="600"/>
-</div>
+📌 **Para mais informações, acesse:**  
+[Analyze text with Language Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/06-text-analysis.html).  
 
-3. Esperar o *deploy* do recurso terminar.
+---
 
-### Selecionar recurso no Language Studio
-Com o recurso Language Service criado, é preciso conecta-lo ao Language Studio. Para isso, basta seguir os seguintes passos:
+## 📌 Índice  
+1. [Procedimento](#procedimento)  
+2. [Resultados](#resultados)  
+3. [Conclusão e Insights](#conclusão-e-insights)  
 
-1. Acessar o [Language Studio](https://language.cognitive.azure.com/home).
-2. Na página inicial, acessar os recursos criados através do botão "Select a resouce".
+---
 
-<div align="center">
-    <img src="readmeFiles/04.png" alt="View all resources" width="800"/>
-</div>
+## 🛠️ Procedimento  
 
-3. Preencha as informações e selecione o recurso recém criado.
+### **Criando um Recurso no Azure Language Service**  
 
-<div align="center">
-    <img src="readmeFiles/05.png" alt="Set default resource" width="800"/>
-</div>
+Para utilizar o **Language Studio**, é necessário criar um recurso **Language Service** no **Azure**.  
 
-### Selecionando e testando o serviço no Language Studio
-Ao retornar a página inicial após concluídos os passos anteriores, é possível ver a lista de serviços disponíveis para teste na plataforma. Nesse experimento foi usado o serviço "Analyze sentiment and mine opinions", na aba "Classify text".
+1. Acesse o portal do Azure: [https://portal.azure.com](https://portal.azure.com)  
+2. No menu principal, clique em **Criar um Recurso** e procure por **Language Service**.  
+3. Configure os detalhes do recurso e aguarde a conclusão do deploy.  
 
-<div align="center">
-    <img src="readmeFiles/06.png" alt="Language Studio Services" width="800"/>
-</div>
+![Criação de Recurso no Azure](https://source.unsplash.com/800x400/?cloud,technology)  
 
-## Resultados
-Ao acessar o serviço é possível carregar o texto a ser analisado, selecionar sua linguagem e também ativar a opção de opinion mining. Para esse experimento, selecionei um capítulo do livro de Mateus, da Bíblia. 
+### **Selecionando o Recurso no Language Studio**  
 
-<div align="center">
-    <img src="readmeFiles/07.png" alt="Language Studio Services" width="800"/>
-</div>
+Após a criação do serviço, conecte-o ao **Language Studio**:  
 
-Abaixo podemos ver o resultado da análise de sentimento de todo o texto. De acordo com os resultados, o texto é majoritariamente negativo (65%). Contudo, a confiança do resultado informado é de apenas 25%. É interesante notar que algumas sentenças obtiveram boa taxa de *confidence*, enquanto outras foram consideradas 100% negativas com 0% de confiança.
+1. Acesse o [Language Studio](https://language.cognitive.azure.com/home).  
+2. No menu inicial, clique em **Selecionar um Recurso**.  
+3. Escolha o recurso criado e confirme a seleção.  
 
-<div align="center">
-    <img src="readmeFiles/08.png" alt="Language Studio Services" width="400"/>
-</div>
+![Selecionando Recurso no Azure Language Studio](https://source.unsplash.com/800x400/?data,cloud)  
 
-<br>
+### **Selecionando e Testando o Serviço**  
 
-<div align="center">
-    <img src="readmeFiles/09.png" alt="Language Studio Services" width="600"/>
-</div>
+Após a conexão, é possível visualizar a lista de serviços disponíveis. Neste experimento, foi utilizado o recurso **"Analyze sentiment and mine opinions"**, na aba **"Classify text"**.  
 
-<br>
+![Serviços no Language Studio](https://source.unsplash.com/800x400/?ai,nlp)  
 
-<div align="center">
-    <img src="readmeFiles/11.png" alt="Language Studio Services" width="600"/>
-</div>
+---
 
+## 📊 Resultados  
 
-Abaixo é possível observar a funcionalidade de *opinion mining* funcionando:
+O **Language Studio** permite carregar um texto para análise, selecionar o idioma e ativar a funcionalidade de **opinion mining**.  
 
-<div align="center">
-    <img src="readmeFiles/10.png" alt="Language Studio Services" width="600"/>
-</div>
+Para o experimento, foi utilizado um capítulo do **livro de Mateus, da Bíblia**.  
 
-## Conclusão e Insights
-Ferramentas de análise de sentimentos e opiniões podem ser muito úteis na automação de análises de *feedbacks* para serviços. Apesar desse recurso funcionar muito bem para textos que claramente visam expressar sentimentos, como é o caso de comentários e avaliações de produtos, a ferramenta não parece se sair tão bem em textos onde essa expressão não é tão clara. Acredito que esse resultado se deve ao fato de que a ferramenta analisa apenas uma sentença por vez e não parece levar em consideração todo o contexto. Penso que uma tecnologia capaz de estabelecer conexões entre sentenças e obter um entendimento geral sobre o contexto de todo o texto possivelmente seria mais bem sucedida nessa análise. 
+O gráfico abaixo mostra os resultados da análise de sentimentos do texto completo. Segundo os dados, **65% do conteúdo foi classificado como negativo**, embora a confiança na análise seja de **apenas 25%**.  
+
+![Resultados da Análise de Sentimentos](https://source.unsplash.com/800x400/?analytics,graph)  
+
+Curiosamente, algumas sentenças apresentaram **alta confiança** na análise, enquanto outras foram classificadas como **100% negativas**, mas com **baixa confiabilidade**.  
+
+Além disso, a funcionalidade de **opinion mining** foi testada para destacar termos-chave dentro do texto.  
+
+![Análise de Opinião](https://source.unsplash.com/800x400/?ai,insights)  
+
+---
+
+## 📝 Conclusão e Insights  
+
+A análise automatizada de sentimentos e opiniões pode ser extremamente útil para entender feedbacks de clientes e avaliações de produtos.  
+
+💡 **Principais aprendizados deste experimento:**  
+✅ **Alta eficiência em textos curtos** como avaliações de produtos e comentários.  
+✅ **Dificuldade em analisar textos longos**, onde o contexto global pode ser ignorado.  
+✅ **Baixa precisão em textos neutros ou ambíguos**, exigindo refinamentos no modelo.  
+✅ **O uso combinado de análise de sentimentos e opinion mining** pode fornecer insights mais precisos.  
+
+Embora a ferramenta seja poderosa, ela **analisa frases individualmente**, sem levar em conta o contexto geral do documento. Um modelo que consiga estabelecer conexões entre sentenças pode oferecer resultados mais robustos.  
+
+![IA e Análise de Dados](https://source.unsplash.com/800x400/?technology,ai)  
+
+---
+
+## 🔗 Links Úteis  
+
+- [Guia Oficial: Analyze text with Language Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/06-text-analysis.html)  
+- [Introdução ao Azure Cognitive Services](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/09-cognitive-services.html)  
+- [Tutorial: Criando um Recurso no Azure Language Service](https://portal.azure.com)  
