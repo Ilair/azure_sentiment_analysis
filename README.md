@@ -1,4 +1,4 @@
-# Lab Project 03 - Análise de Sentimentos com Language Studio no Azure AI  
+# Análise de Sentimentos com Language Studio no Azure AI  
 
 ![Status](https://img.shields.io/badge/Status_Projeto:-Concluído_(10/Mar/2025)-green)  
 
