@@ -40,7 +40,6 @@ Para utilizar o **Language Studio**, é necessário criar um recurso **Language 
 2. No menu principal, clique em **Criar um Recurso** e procure por **Language Service**.  
 3. Configure os detalhes do recurso e aguarde a conclusão do deploy.  
 
-![Criação de Recurso no Azure](https://source.unsplash.com/800x400/?cloud,technology)  
 
 ### **Selecionando o Recurso no Language Studio**  
 
@@ -50,13 +49,11 @@ Após a criação do serviço, conecte-o ao **Language Studio**:
 2. No menu inicial, clique em **Selecionar um Recurso**.  
 3. Escolha o recurso criado e confirme a seleção.  
 
-![Selecionando Recurso no Azure Language Studio](https://source.unsplash.com/800x400/?data,cloud)  
 
 ### **Selecionando e Testando o Serviço**  
 
 Após a conexão, é possível visualizar a lista de serviços disponíveis. Neste experimento, foi utilizado o recurso **"Analyze sentiment and mine opinions"**, na aba **"Classify text"**.  
 
-![Serviços no Language Studio](https://source.unsplash.com/800x400/?ai,nlp)  
 
 ---
 
@@ -68,13 +65,11 @@ Para o experimento, foi utilizado um capítulo do **livro de Mateus, da Bíblia*
 
 O gráfico abaixo mostra os resultados da análise de sentimentos do texto completo. Segundo os dados, **65% do conteúdo foi classificado como negativo**, embora a confiança na análise seja de **apenas 25%**.  
 
-![Resultados da Análise de Sentimentos](https://source.unsplash.com/800x400/?analytics,graph)  
 
 Curiosamente, algumas sentenças apresentaram **alta confiança** na análise, enquanto outras foram classificadas como **100% negativas**, mas com **baixa confiabilidade**.  
 
 Além disso, a funcionalidade de **opinion mining** foi testada para destacar termos-chave dentro do texto.  
-
-![Análise de Opinião](https://source.unsplash.com/800x400/?ai,insights)  
+ 
 
 ---
 
@@ -88,9 +83,7 @@ A análise automatizada de sentimentos e opiniões pode ser extremamente útil p
 ✅ **Baixa precisão em textos neutros ou ambíguos**, exigindo refinamentos no modelo.  
 ✅ **O uso combinado de análise de sentimentos e opinion mining** pode fornecer insights mais precisos.  
 
-Embora a ferramenta seja poderosa, ela **analisa frases individualmente**, sem levar em conta o contexto geral do documento. Um modelo que consiga estabelecer conexões entre sentenças pode oferecer resultados mais robustos.  
-
-![IA e Análise de Dados](https://source.unsplash.com/800x400/?technology,ai)  
+Embora a ferramenta seja poderosa, ela **analisa frases individualmente**, sem levar em conta o contexto geral do documento. Um modelo que consiga estabelecer conexões entre sentenças pode oferecer resultados mais robustos.   
 
 ---
 
